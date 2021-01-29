@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #4f4f4f;
+  font-family: "Montserrat";
+}
+
+main {
+  padding: 25px;
+}
+
+.container {
+  padding: 25px;
+}
+
+.card_1,
+.card_2 {
+  display: flex;
+  border-radius: 12px;
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.info {
+  font-size: 18px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.title {
+  color: #828282;
+  font-weight: 500;
+}
+
+img {
+  border-radius: 12px;
+}
+
+i {
+  margin-right: 5px;
+}
+
+.card_1 {
+  width: 1046px;
+  height: 311px;
+}
+.card_1 .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.card_1 .info div {
+  display: flex;
+  height: 55%;
+  justify-content: space-between;
+}
+.card_1 .info .name_title,
+.card_1 .info .email_phone {
+  height: 65%;
+  flex-direction: column;
+}
+.card_1 .info .introduction {
+  width: 95%;
+  flex-direction: column;
+}
+.card_1 .info .introduction p {
+  margin-top: 15px;
+}
+.card_1 img {
+  max-height: 266px;
+}
+.card_1 .details {
+  display: flex;
+}
+
+.card_2 {
+  width: 395px;
+  height: 662px;
+  padding: 25px;
+  flex-direction: column;
+}
+.card_2 img {
+  max-height: 343px;
+}
+.card_2 .container {
+  padding: 0;
+  padding-top: 15px;
+  height: 100%;
+}
+.card_2 .info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card_2 .name_title,
+.card_2 .email_phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24%;
+}/*# sourceMappingURL=input.css.map */
