@@ -2,6 +2,8 @@
 $bg-color: #f2f2f2;
 $text-color: #4f4f4f;
 $text-gray: #828282;
+$gray-100: #333333;
+$light-gray: #e0e0e0;
 * {
   margin: 0;
   padding: 0;
@@ -15,35 +17,8 @@ body {
 main {
   padding: 25px;
 }
-.container {
-  padding: 25px;
-}
-.card_1,
-.card_2 {
-  display: flex;
-  border-radius: 12px;
-  background-color: white;
-  padding: 25px;
-  margin-bottom: 25px;
-}
-.info {
-  font-size: 18px;
-}
-.name {
-  font-size: 24px;
-  font-weight: 600;
-}
-.title {
-  color: $text-gray;
-  font-weight: 500;
-}
-img {
-  border-radius: 12px;
-}
-i {
-  margin-right: 5px;
-}
-.card_1 {
+
+.main_info_1 {
   width: 1046px;
   height: 311px;
   .info {
@@ -78,10 +53,9 @@ i {
     display: flex;
   }
 }
-.card_2 {
+.main_info_2 {
   width: 395px;
   height: 662px;
-  padding: 25px;
   flex-direction: column;
   img {
     max-height: 343px;
@@ -103,5 +77,218 @@ i {
     flex-direction: column;
     justify-content: space-between;
     height: 24%;
+  }
+}
+.project_1 {
+  height: 311px;
+  width: 1024px;
+  .container {
+    padding: 5px 36px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.project_2 {
+  height: 588px;
+  width: 395px;
+  flex-direction: column;
+  img {
+    max-height: 261px;
+    max-width: 351px;
+  }
+  .container {
+    padding: 15px 25px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+.container {
+  padding: 25px;
+}
+.card {
+  display: flex;
+  border-radius: 12px;
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+.info {
+  font-size: 18px;
+}
+.name {
+  font-size: 24px;
+  font-weight: 600;
+}
+.title {
+  color: $text-gray;
+  font-weight: 500;
+}
+img {
+  border-radius: 12px;
+}
+i {
+  margin-right: 5px;
+}
+
+.project_title {
+  color: $gray-100;
+  font-size: 24px;
+}
+.project_description {
+  color: $text-gray;
+}
+.buttons {
+  display: flex;
+  font-size: 18px;
+}
+.btn {
+  cursor: pointer;
+  color: white;
+  background-color: #5c94e1;
+  border-radius: 12px;
+  padding: 13px 40px;
+  margin-right: 15px;
+  &:nth-of-type(2) {
+    background-color: white;
+    color: #5c94e1;
+    border: 1px solid #5c94e1;
+  }
+}
+.skills_1,
+.skills_2 {
+  flex-direction: column;
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+    color: $text-color;
+    text-transform: uppercase;
+  }
+  li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .border {
+    border-radius: 5px;
+    width: 380px; /* Full width */
+    background-color: #ddd; /* Grey background */
+    // margin-left: 15px;
+  }
+  .skills {
+    border-radius: 5px;
+    text-align: right; /* Right-align text */
+    padding-top: 0px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+    background-color: #5c94e1;
+  }
+  .html,
+  .css {
+    width: 90%;
+  }
+  .react {
+    width: 70%;
+  }
+  .javascript {
+    width: 70%;
+  }
+  .git {
+    width: 60%;
+  }
+  .node {
+    width: 50%;
+  }
+}
+.skills_1 {
+  width: 1018px;
+}
+.skills_2 {
+  width: 389px;
+  height: 284px;
+  .container {
+    grid-template-columns: 1fr;
+    font-weight: 500;
+  }
+  .border {
+    width: 150px;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+}
+.blog_post_1,
+.blog_post_2 {
+  font-weight: 500;
+  overflow: hidden;
+  .title {
+    color: $light-gray;
+    font-size: 16px;
+    margin-top: -10px;
+  }
+  .post_title {
+    width: 40%;
+    font-size: 24px;
+    color: $gray-100;
+  }
+  .post_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    p {
+      font-size: 16px;
+      color: $text-gray;
+      line-height: 19px;
+    }
+    .link {
+      color: #2f80ed;
+    }
+  }
+}
+.blog_post_1 {
+  max-width: 1046px;
+  img {
+    transform: translateX(50px);
+    max-height: 364px;
+  }
+}
+.blog_post_2 {
+  width: 536px;
+  height: 646px;
+  padding: 26px 15px;
+  display: block;
+  .post_image {
+    transform: translate(220px, -150px);
+  }
+  img {
+    max-height: 321px;
+  }
+  .post_main {
+    height: 100%;
+    .title {
+      width: 45%;
+    }
+    .post_title {
+      margin: 15px 0;
+      width: 33%;
+    }
+    .text {
+      margin-top: -120px;
+      p {
+        margin-bottom: 25px;
+      }
+    }
   }
 }
