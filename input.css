@@ -326,4 +326,180 @@ i {
 }
 .blog_post_2 .post_main .text p {
   margin-bottom: 25px;
+}
+
+.experiences_1,
+.experiences_2 {
+  max-width: 1046px;
+  height: 329px;
+  flex-direction: column;
+  font-weight: 500;
+}
+.experiences_1 .title,
+.experiences_2 .title {
+  margin-bottom: 28px;
+  font-size: 24px;
+  color: #4f4f4f;
+}
+.experiences_1 .content,
+.experiences_2 .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  width: 98%;
+  margin: 0 auto;
+}
+.experiences_1 .content .date,
+.experiences_2 .content .date {
+  font-size: 14px;
+  color: #828282;
+  margin: 10px 0;
+}
+.experiences_1 .content .position,
+.experiences_2 .content .position {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.experiences_1 .content .summary,
+.experiences_2 .content .summary {
+  width: 50%;
+  color: #828282;
+  font-size: 16px;
+}
+.experiences_1 .content .logo,
+.experiences_2 .content .logo {
+  margin-right: 24px;
+  font-size: 64px;
+}
+.experiences_1 .content .job,
+.experiences_2 .content .job {
+  display: flex;
+}
+
+.experiences_2 {
+  width: 417px;
+  height: 690px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.experiences_2 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+}
+.experiences_2 .content .summary {
+  width: 100%;
+}
+.experiences_2 .content .position {
+  margin-bottom: 36px;
+}
+
+.hobbies_1 {
+  width: 1046px;
+  height: 346px;
+}
+
+.hobbies_1,
+.hobbies_2 {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hobbies_1 .title,
+.hobbies_2 .title {
+  font-size: 24px;
+  color: #4f4f4f;
+  margin-bottom: 15px;
+}
+.hobbies_1 .content,
+.hobbies_2 .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+.hobbies_1 .content .image img,
+.hobbies_2 .content .image img {
+  max-height: 196px;
+}
+.hobbies_1 .content .hobby .title,
+.hobbies_2 .content .hobby .title {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333333;
+  font-weight: 600;
+}
+.hobbies_1 .content .hobby .description,
+.hobbies_2 .content .hobby .description {
+  font-size: 16px;
+  color: #828282;
+}
+
+.hobbies_2 {
+  width: 427px;
+}
+.hobbies_2 .content {
+  display: flex;
+  flex-direction: column;
+}
+.hobbies_2 .content .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projects_1 {
+  width: 1046px;
+}
+
+.projects_1 .title,
+.projects_2 .title {
+  color: #4f4f4f;
+  font-size: 24px;
+}
+
+.projects_2 {
+  flex-direction: column;
+}
+.projects_2 .tags {
+  display: flex;
+  margin: 15px 0;
+}
+.projects_2 .btn {
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid #4f4f4f;
+  color: #4f4f4f;
+}
+.projects_2 .btn:active {
+  background-color: #2f80ed;
+  color: white;
+  border-color: white;
+}
+.projects_2 .btn:hover {
+  border-color: #2f80ed;
+}
+
+.pagination {
+  display: flex;
+}
+.pagination .page_indicator {
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #4f4f4f;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  margin: 0 15px;
+}
+.pagination .page_indicator:active {
+  background-color: #2f80ed;
+  color: white;
+  border-color: white;
+}
+.pagination .page_indicator:hover {
+  border-color: #2f80ed;
 }/*# sourceMappingURL=input.css.map */
