@@ -13,12 +13,30 @@ body {
   background-color: $bg-color;
   color: $text-color;
   font-family: 'Montserrat';
+  display: grid;
+  place-items: center;
 }
 main {
-  padding: 25px;
+  max-width: 1046px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 25px;
+  width: 88%;
+  a,
+  a:active {
+    color: $text-color;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $gray-100;
+  }
+}
+#skills_blog {
+  display: flex;
+  justify-content: space-between;
 }
 .main_info_1 {
-  width: 1046px;
   height: 311px;
   .info {
     display: flex;
@@ -114,6 +132,11 @@ main {
   background-color: white;
   padding: 25px;
   margin-bottom: 25px;
+  box-shadow: 0 8px 8px -6px rgb(0 0 0 / 25%);
+  transition: box-shadow 0.5s ease;
+  &:hover {
+    box-shadow: 0 8px 8px -6px rgb(0 0 0 / 60%);
+  }
 }
 .info {
   font-size: 18px;
@@ -217,8 +240,14 @@ i {
   width: 389px;
   height: 284px;
   .container {
-    grid-template-columns: 1fr;
+    padding: 0px;
+    padding-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
     font-weight: 500;
+    place-items: center;
+    li {
+      margin: 15px;
+    }
   }
   .border {
     width: 150px;
