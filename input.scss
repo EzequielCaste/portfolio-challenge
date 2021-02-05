@@ -33,6 +33,11 @@ main {
   }
 }
 #skills_blog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 370px auto;
+}
+#projects {
   display: flex;
   justify-content: space-between;
 }
@@ -109,14 +114,15 @@ main {
 }
 .project_2 {
   height: 588px;
-  width: 395px;
+  // width: 395px;
+  width: 320px;
   flex-direction: column;
   img {
     max-height: 261px;
     max-width: 351px;
   }
   .container {
-    padding: 15px 25px;
+    padding: 10px 0px;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -173,6 +179,12 @@ i {
   border-radius: 12px;
   padding: 13px 40px;
   margin-right: 15px;
+  border: 1px solid #5c94e1;
+  &:hover {
+    background-color: white;
+    color: #5c94e1;
+    border: 1px solid #5c94e1;
+  }
   &:nth-of-type(2) {
     background-color: white;
     color: #5c94e1;
@@ -237,7 +249,8 @@ i {
   width: 1018px;
 }
 .skills_2 {
-  width: 389px;
+  width: 427px;
+  // width: 389px;
   height: 284px;
   .container {
     padding: 0px;
@@ -358,15 +371,22 @@ i {
     }
     .job {
       display: flex;
+      .logo img {
+        max-width: 152px;
+      }
     }
   }
 }
 .experiences_2 {
-  width: 417px;
-  height: 690px;
+  // width: 417px;
+  width: 536px;
+  // height: 690px;
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
+  grid-row: 3;
+  grid-column: 2;
   .content {
     display: flex;
     flex-direction: column;
@@ -387,11 +407,11 @@ i {
 .hobbies_1,
 .hobbies_2 {
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
   .title {
     font-size: 24px;
     color: $text-color;
-    margin-bottom: 15px;
+    margin-bottom: 28px;
   }
   .content {
     display: grid;
@@ -418,6 +438,7 @@ i {
 }
 .hobbies_2 {
   width: 427px;
+  grid-row: 2 /4;
   .content {
     display: flex;
     flex-direction: column;

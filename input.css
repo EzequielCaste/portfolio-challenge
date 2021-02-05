@@ -31,6 +31,12 @@ main a:hover {
 }
 
 #skills_blog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 370px auto;
+}
+
+#projects {
   display: flex;
   justify-content: space-between;
 }
@@ -109,7 +115,7 @@ main a:hover {
 
 .project_2 {
   height: 588px;
-  width: 395px;
+  width: 320px;
   flex-direction: column;
 }
 .project_2 img {
@@ -117,7 +123,7 @@ main a:hover {
   max-width: 351px;
 }
 .project_2 .container {
-  padding: 15px 25px;
+  padding: 10px 0px;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -184,6 +190,12 @@ i {
   border-radius: 12px;
   padding: 13px 40px;
   margin-right: 15px;
+  border: 1px solid #5c94e1;
+}
+.btn:hover {
+  background-color: white;
+  color: #5c94e1;
+  border: 1px solid #5c94e1;
 }
 .btn:nth-of-type(2) {
   background-color: white;
@@ -267,7 +279,7 @@ i {
 }
 
 .skills_2 {
-  width: 389px;
+  width: 427px;
   height: 284px;
 }
 .skills_2 .container {
@@ -407,13 +419,18 @@ i {
 .experiences_2 .content .job {
   display: flex;
 }
+.experiences_1 .content .job .logo img,
+.experiences_2 .content .job .logo img {
+  max-width: 152px;
+}
 
 .experiences_2 {
-  width: 417px;
-  height: 690px;
+  width: 536px;
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  grid-row: 3;
+  grid-column: 2;
 }
 .experiences_2 .content {
   display: flex;
@@ -436,13 +453,12 @@ i {
 .hobbies_1,
 .hobbies_2 {
   flex-direction: column;
-  justify-content: space-between;
 }
 .hobbies_1 .title,
 .hobbies_2 .title {
   font-size: 24px;
   color: #4f4f4f;
-  margin-bottom: 15px;
+  margin-bottom: 28px;
 }
 .hobbies_1 .content,
 .hobbies_2 .content {
@@ -469,6 +485,7 @@ i {
 
 .hobbies_2 {
   width: 427px;
+  grid-row: 2/4;
 }
 .hobbies_2 .content {
   display: flex;
