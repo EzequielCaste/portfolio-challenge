@@ -292,6 +292,9 @@ i {
 .skills_2 .container li {
   margin: 15px;
 }
+.skills_2 .container li:hover {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
 .skills_2 .border {
   width: 150px;
 }
@@ -442,7 +445,7 @@ i {
   width: 100%;
 }
 .experiences_2 .content .position {
-  margin-bottom: 36px;
+  margin-bottom: 12px;
 }
 
 .hobbies_1 {

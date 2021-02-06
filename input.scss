@@ -260,6 +260,9 @@ i {
     place-items: center;
     li {
       margin: 15px;
+      &:hover {
+        text-shadow: 1px 1px 3px rgb(0 0 0 / 25%);
+      }
     }
   }
   .border {
@@ -396,7 +399,7 @@ i {
       width: 100%;
     }
     .position {
-      margin-bottom: 36px;
+      margin-bottom: 12px;
     }
   }
 }
